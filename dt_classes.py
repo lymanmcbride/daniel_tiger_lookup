@@ -1,5 +1,4 @@
-from hash import HashMap
-episodes = {}
+all_tags = []
 class Daniel:
     def __init__(self, season, episode, jingle):
         self.season = season
@@ -8,7 +7,9 @@ class Daniel:
         self.tags = []
 
     def __repr__(self):
-        return "Daniel Tiger season {} episode {}. Its tags are {}.".format(self.season, self.episode, self.tags)
+        return "Daniel Tiger season {} episode {}".format(self.season, self.episode)
 
     def assign_tag(self, tag):
         self.tags.append(tag)
+        if tag not in all_tags:
+            all_tags.append(tag)
