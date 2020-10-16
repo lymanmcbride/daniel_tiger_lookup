@@ -1,8 +1,10 @@
 all_tags = []
 class Daniel:
-    def __init__(self, season, episode, jingle):
+    def __init__(self, season, episode, real_se, name, jingle):
         self.season = season
         self.episode = episode
+        self.real_se = real_se
+        self.name = name
         self.jingle = jingle
         self.tags = []
 
